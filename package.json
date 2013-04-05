@@ -1,0 +1,21 @@
+{
+  "name": "sorting",
+  "version": "0.1.1",
+  "description": "Jasmine Runner",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "grunt jasmine"
+  },
+  "repository": "",
+  "author": "Anshul",
+  "license": "BSD",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-jasmine-runner": "~0.6.0"
+  },
+  "readmeFilename": "README.md",
+  "devDependencies" : {
+    "grunt-jasmine-runner" : "latest",
+    "grunt"         : "~0.3.9"
+  }
+}

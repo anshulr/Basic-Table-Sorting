@@ -1,0 +1,119 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+	<title>Javascript Table Sorting</title>
+	<script type="text/javascript" src="sortable.js"></script>
+	<style>
+		table { border-collapse: collapse; }
+		th, td { border: 5px solid #ccc; font: 40px verdana; padding: 3px }
+
+		th { padding-right: 21px; }
+		
+		#navlist{position:relative;}
+		#navlist li{margin:0;padding:0;list-style:none;position:absolute;top:0;}
+		#navlist li, #navlist a{height:44px;display:block;}
+
+		.prev{left:0px;width:46px;}
+		.prev{background:url('image.jpg') 0 0}
+		.prev a:hover{background: url('image.jpg') 0 -45px;}
+
+		.next{left:53px;width:43px;}
+		.next{background:url('image.jpg') -47px 0}
+		.next a:hover{background: url('image.jpg') -47px -45px;}
+	</style>
+</head>
+
+<body>
+<div> 
+	<div style="position:relative">
+		<ul id="navlist">
+			<div style="position:relative left:0px 	">
+			  <li class="prev"><a href="javascript:;" onclick="Sort(0, 'Dsc');"></a></li>
+			  <li class="next"><a href="javascript:;" onclick="Sort(0, 'Asc');"></a></li>
+			</div> 	
+			<div style="position:relative; left:200px ">
+			  <li class="prev"><a href="javascript:;" onclick="Sort(1, 'Dsc');"></a></li>
+			  <li class="next"><a href="javascript:;" onclick="Sort(1, 'Asc');"></a></li>
+			</div>
+			<div style="position:relative; left:350px ">
+			  <li class="prev"><a href="javascript:;" onclick="Sort(2, 'Dsc');"></a></li>
+			  <li class="next"><a href="javascript:;" onclick="Sort(2, 'Asc');"></a></li>
+			</div>
+		</ul>
+	</div>
+
+	<div style="position:relative;top:46px">
+	
+	<table id="table">
+		<thead>
+		<tr>
+			<th>Serial No.</th>
+			<th>Name</th>
+			<th>Age</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>2</td>
+			<td>Kobe</td>
+			<td>35</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>James</td>
+			<td>30</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Allen</td>
+			<td>45</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>Derrick</td>
+			<td>25</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>Michael</td>
+			<td>30</td>
+		</tr>
+		<tr>
+			<td>10</td>
+			<td>Paul</td>
+			<td>26</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>Blake</td>
+			<td>32</td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td>Jordan</td>
+			<td>36</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>Ray</td>
+			<td>56</td>
+		</tr>
+		<tr>
+			<td>9</td>
+			<td>Steve</td>
+			<td>51</td>
+		</tr>
+
+		</tbody>
+	</table>
+	
+	</div>
+</div>
+
+
+
+
+</body>
+
+</html>
